@@ -4,3 +4,9 @@ function changeMessage() {
         "Top Tech is now powered by JavaScript!";
 
 }
+
+function showName() {
+
+    alert("My name is Top Tech Web Developer");
+
+}
