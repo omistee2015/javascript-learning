@@ -1,6 +1,6 @@
 function changeMessage() {
 
     document.getElementById("message").textContent =
-        "Congratulations! You just used JavaScript.";
+        "Top Tech is now powered by JavaScript!";
 
 }
