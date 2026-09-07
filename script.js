@@ -1,13 +1,16 @@
 let businessName = "Top Tech";
-let service = "Web Development";
 let price = 150;
 
-function showBusiness() {
+function checkPrice() {
 
-    alert(
-        "Business: " + businessName +
-        "\nService: " + service +
-        "\nStarting Price: $" + price
-    );
+    if (price <= 100) {
+
+        alert("This is an affordable package.");
+
+    } else {
+
+        alert("This is a professional package.");
+
+    }
 
 }
