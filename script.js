@@ -1,12 +1,13 @@
-function changeMessage() {
+let businessName = "Top Tech";
+let service = "Web Development";
+let price = 150;
 
-    document.getElementById("message").textContent =
-        "Top Tech is now powered by JavaScript!";
+function showBusiness() {
 
-}
-
-function showName() {
-
-    alert("My name is Top Tech Web Developer");
+    alert(
+        "Business: " + businessName +
+        "\nService: " + service +
+        "\nStarting Price: $" + price
+    );
 
 }
