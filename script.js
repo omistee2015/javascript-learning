@@ -1,5 +1,9 @@
-function greetCustomer(name) {
+function showNumbers() {
 
-    alert("Welcome " + name + " to Top Tech!");
+    for (let i = 1; i <= 5; i++) {
+
+        console.log(i);
+
+    }
 
 }
