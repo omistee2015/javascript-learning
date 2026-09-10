@@ -18,10 +18,15 @@ let customers = [
     }
 ];
 
+let customerList = document.getElementById("customerList");
+
 for (let i = 0; i < customers.length; i++) {
 
-    console.log(customers[i].name);
-    console.log(customers[i].service);
-    console.log(customers[i].price);
+    customerList.innerHTML +=
+        "<p>" +
+        "Customer: " + customers[i].name +
+        "<br>Service: " + customers[i].service +
+        "<br>Price: $" + customers[i].price +
+        "</p>";
 
 }
