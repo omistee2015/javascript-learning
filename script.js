@@ -14,25 +14,13 @@ function addCustomer() {
 
     customers.push(customer);
 
-    displayCustomers();
-
-}
-
-function displayCustomers() {
-
     let customerList = document.getElementById("customerList");
 
-    customerList.innerHTML = "";
-
-    for (let i = 0; i < customers.length; i++) {
-
-        customerList.innerHTML +=
-            "<div>" +
-            "<h3>" + customers[i].name + "</h3>" +
-            "<p>Service: " + customers[i].service + "</p>" +
-            "<p>Price: $" + customers[i].price + "</p>" +
-            "</div>";
-
-    }
+    customerList.innerHTML +=
+        "<div>" +
+        "<h3>" + name + "</h3>" +
+        "<p>Service: " + service + "</p>" +
+        "<p>Price: $" + price + "</p>" +
+        "</div>";
 
 }
