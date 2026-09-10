@@ -18,15 +18,19 @@ let customers = [
     }
 ];
 
-let customerList = document.getElementById("customerList");
+function showCustomers() {
 
-for (let i = 0; i < customers.length; i++) {
+    let customerList = document.getElementById("customerList");
 
-    customerList.innerHTML +=
-        "<p>" +
-        "Customer: " + customers[i].name +
-        "<br>Service: " + customers[i].service +
-        "<br>Price: $" + customers[i].price +
-        "</p>";
+    for (let i = 0; i < customers.length; i++) {
+
+        customerList.innerHTML +=
+            "<p>" +
+            "Customer: " + customers[i].name +
+            "<br>Service: " + customers[i].service +
+            "<br>Price: $" + customers[i].price +
+            "</p>";
+
+    }
 
 }
