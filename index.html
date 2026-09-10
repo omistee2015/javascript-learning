@@ -5,20 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My JavaScript Practice</title>
+    <title>Top Tech Customer Form</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <h1>My JavaScript Learning</h1>
+    <h1>Top Tech Customer Form</h1>
 
-    <p>Welcome to my JavaScript project.</p>
+    <p>Enter customer information below.</p>
 
-    <button onclick="showCustomers()">
-        Show Customers
+    <input type="text" id="customerName" placeholder="Customer Name">
+
+    <br><br>
+
+    <input type="text" id="customerService" placeholder="Service Required">
+
+    <br><br>
+
+    <input type="number" id="customerPrice" placeholder="Price">
+
+    <br><br>
+
+    <button onclick="addCustomer()">
+        Add Customer
     </button>
 
     <div id="customerList"></div>
