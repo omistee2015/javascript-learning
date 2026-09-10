@@ -1,36 +1,15 @@
-let customers = [
-    {
-        name: "John",
-        service: "CCTV Installation",
-        price: 150
-    },
+let customers = [];
 
-    {
-        name: "David",
-        service: "Solar Inverter",
-        price: 500
-    },
+function addCustomer() {
 
-    {
-        name: "Michael",
-        service: "Web Development",
-        price: 300
-    }
-];
+    let name = document.getElementById("customerName").value;
 
-function showCustomers() {
+    let service = document.getElementById("customerService").value;
 
-    let customerList = document.getElementById("customerList");
+    let price = document.getElementById("customerPrice").value;
 
-    for (let i = 0; i < customers.length; i++) {
-
-        customerList.innerHTML +=
-            "<p>" +
-            "Customer: " + customers[i].name +
-            "<br>Service: " + customers[i].service +
-            "<br>Price: $" + customers[i].price +
-            "</p>";
-
-    }
+    console.log(name);
+    console.log(service);
+    console.log(price);
 
 }
